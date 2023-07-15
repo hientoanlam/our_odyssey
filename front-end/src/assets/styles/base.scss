@@ -1,0 +1,103 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-title: 'EB Garamond', serif;
+}
+
+html {
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--gray-100);
+}
+.title {
+    font-family: var(--font-family-title);
+}
+
+.s-400 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.s-700 {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.base-400 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.base-700 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.m-400 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.m-700 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.l-400 {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.l-700 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.xl-400 {
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.xl-700 {
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.xxl-400 {
+    font-size: 64px;
+    line-height: 80px;
+}
+
+.xxl-700 {
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+}
+
+/* COLORS */
+:root, #root, .root,
+#docs-root {
+    --neon-blue: #00FFFF;
+    --neon-yellow: #FFFF00;
+    --neon-coral: #FF7F50;
+    --neon-purple: #BF00FF;
+    --neon-green: #39FF14;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-100: #1E1E1E;
+    --gray-200: #555555;
+    --red: #FF355E;
+}
+
+.max-w-default {
+  max-width: 1440px;
+}

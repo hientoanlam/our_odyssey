@@ -1,0 +1,37 @@
+<template>
+    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 420" width="100%">
+        <title>capsule</title>
+        <defs>
+            <image  width="1200" height="400" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAGQAQMAAACEewsdAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAABRSURBVHic7cGBAAAAAMOg+VOf4AZVAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA36/AAAQT9g3oAAAAASUVORK5CYII="/>
+        </defs>
+        <use id="Background" href="#img1" x="10" y="10"/>
+        <g id="Roll">
+            <path id="Shape 1" :style="`fill: var(--neon-${color})`" d="m175 85h850v250h-850zm-3.5 250c-31.8 0-57.5-55.9-57.5-125 0-69.1 25.7-125 57.5-125 31.8 0 57.5 55.9 57.5 125 0 69.1-25.7 125-57.5 125zm856 0c-31.8 0-57.5-55.9-57.5-125 0-69.1 25.7-125 57.5-125 31.8 0 57.5 55.9 57.5 125 0 69.1-25.7 125-57.5 125z"/>
+            <path id="Shape 2" class="s1" d="m1027.5 335c-31.8 0-57.5-55.9-57.5-125 0-69.1 25.7-125 57.5-125 31.8 0 57.5 55.9 57.5 125 0 69.1-25.7 125-57.5 125z"/>
+        </g>
+        <g id="Pill">
+            <g id="right">
+                <path id="line" class="s2" d="m602 10h408c110.5 0 200 89.5 200 200 0 110.5-89.5 200-200 200h-408z"/>
+                <path id="cover" class="s3" d="m602 10h408c110.5 0 200 89.5 200 200 0 110.5-89.5 200-200 200h-408z"/>
+            </g>
+            <g id="left">
+                <path id="&lt;Path&gt;" class="s4" d="m442.7 56.1c-9.6-7.4-45.4-9.2-58.6-9.7-46.4-2.1-89.8-1.6-128.5 0.3-44.4 2.4-78.5 9.2-108.6 17.1-4.6 1.2 7.5 5.9 13.3 5.1 33.2-4.4 71.9-7 112.4-8.1 41.7-1 82.6-2 129.3-0.4 12.8 0.4 49.8 2.5 40.7-4.3z"/>
+                <path id="line" class="s2" d="m10 210c0-110.5 89.5-200 200-200h408v400h-408c-110.5 0-200-89.5-200-200z"/>
+                <path id="cover" class="s3" d="m10 210c0-110.5 89.5-200 200-200h408v400h-408c-110.5 0-200-89.5-200-200z"/>
+            </g>
+        </g>
+    </svg>
+</template>
+
+<script setup>
+    defineProps({
+      color: String,
+    })
+</script>
+
+<style scoped>
+    .s1 { fill: #555555 } 
+    .s2 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 16 } 
+    .s3 { fill-opacity: .2;fill: #ffffff;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 16 } 
+    .s4 { fill: #ffffff } 
+</style>
