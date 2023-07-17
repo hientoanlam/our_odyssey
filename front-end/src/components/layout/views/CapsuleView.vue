@@ -7,6 +7,7 @@
             @dblclick="dbClickHandler" 
             :color="color" 
             :style="`z-index: 20;`"
+            :id="capKey"
             :class="{
             'cursor-pointer hover:drop-shadow-[0.5rem_0.5rem_1rem_rgba(255,255,255,0.3)] transition duration-300': is_correct
             }"
@@ -45,10 +46,10 @@
   const animated = ref(false);
   const passInput = ref('');
   const is_correct = ref(false);
-  const dbClickHandler = () => {
+  const dbClickHandler = (event) => {
     if (is_correct.value === true) {
       closeHandler();
-      emit('capsule-dblclicked');
+      emit('capsule-dblclicked', event.currentTarget.id);
     }
   }
 
@@ -57,7 +58,6 @@
       const response = await signInWithEmailAndPassword(getAuth(), 'lhtoan20@apcs.vn', passInput.value);
       is_correct.value = true;
     } catch (error) {
-      console.error(error);
       animated.value = true;
       setTimeout(() => {
         animated.value = false;
@@ -75,6 +75,7 @@
   };
   defineProps({
     color: {type: String, default: 'blue'},
+    capKey: {type: String, default: ''},
   })
 </script>
 
